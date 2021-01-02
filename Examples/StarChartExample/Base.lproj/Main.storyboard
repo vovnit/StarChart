@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StarChartExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="QTW-Jl-YmI">
+                                <rect key="frame" x="16" y="186.66666666666669" width="396" height="552.66666666666652"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" horizontalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CKP-fr-Nlb" customClass="Chart" customModule="StarChart">
+                                        <rect key="frame" x="0.0" y="0.0" width="396" height="396"/>
+                                        <color key="tintColor" systemColor="systemOrangeColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="CKP-fr-Nlb" secondAttribute="height" multiplier="1:1" id="03Q-h1-GI2"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="verticesCount">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="centerOffset">
+                                                <real key="value" value="152"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="drawPoints" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="oI4-W3-9z6">
+                                        <rect key="frame" x="0.0" y="428" width="396" height="124.66666666666663"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of vertices" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMD-Vj-DFn">
+                                                <rect key="frame" x="0.0" y="0.0" width="396" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="2" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Q31-tc-aga">
+                                                <rect key="frame" x="-2" y="28.333333333333371" width="400" height="31"/>
+                                                <connections>
+                                                    <action selector="firstSliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="qU5-Eq-Bij"/>
+                                                </connections>
+                                            </slider>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Center offset" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fv4-Yk-gj4">
+                                                <rect key="frame" x="0.0" y="66.333333333333371" width="396" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="10" maxValue="160" translatesAutoresizingMaskIntoConstraints="NO" id="IoN-CW-7cO">
+                                                <rect key="frame" x="-2" y="94.666666666666742" width="400" height="31"/>
+                                                <connections>
+                                                    <action selector="secondSliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="9bl-vF-vdl"/>
+                                                </connections>
+                                            </slider>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <variation key="widthClass=regular" axis="horizontal"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QTW-Jl-YmI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9vX-o1-2So"/>
+                            <constraint firstItem="QTW-Jl-YmI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="A1o-ij-w0X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QTW-Jl-YmI" secondAttribute="bottom" constant="16" id="AAz-Dq-37E"/>
+                            <constraint firstItem="QTW-Jl-YmI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LDd-2N-0PE"/>
+                            <constraint firstAttribute="trailing" secondItem="QTW-Jl-YmI" secondAttribute="trailing" constant="16" id="MIl-j3-Dq1"/>
+                            <constraint firstItem="QTW-Jl-YmI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PjO-ae-KZe"/>
+                            <constraint firstItem="QTW-Jl-YmI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gQa-df-VPT"/>
+                            <constraint firstItem="QTW-Jl-YmI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="luw-zI-Sgl"/>
+                            <constraint firstAttribute="trailing" secondItem="QTW-Jl-YmI" secondAttribute="trailing" constant="16" id="o15-Zy-hPO"/>
+                            <constraint firstItem="QTW-Jl-YmI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s4k-Jk-eYR"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="AAz-Dq-37E"/>
+                                <exclude reference="A1o-ij-w0X"/>
+                                <exclude reference="luw-zI-Sgl"/>
+                                <exclude reference="o15-Zy-hPO"/>
+                                <exclude reference="s4k-Jk-eYR"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="AAz-Dq-37E"/>
+                                <exclude reference="9vX-o1-2So"/>
+                                <include reference="A1o-ij-w0X"/>
+                                <exclude reference="LDd-2N-0PE"/>
+                                <exclude reference="MIl-j3-Dq1"/>
+                                <exclude reference="gQa-df-VPT"/>
+                                <include reference="s4k-Jk-eYR"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="luw-zI-Sgl"/>
+                                <include reference="o15-Zy-hPO"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="chart" destination="CKP-fr-Nlb" id="oQv-q6-9Qg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14" y="104"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E7129E7E254B0DA300A76088 /* ChartMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7129E7D254B0DA300A76088 /* ChartMath.swift */; };
 		E78FAD8B2548B1B6000EAA80 /* StarChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E78FAD812548B1B6000EAA80 /* StarChart.framework */; };
 		E78FAD902548B1B6000EAA80 /* StarChartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78FAD8F2548B1B6000EAA80 /* StarChartTests.swift */; };
 		E78FAD922548B1B6000EAA80 /* StarChart.h in Headers */ = {isa = PBXBuildFile; fileRef = E78FAD842548B1B6000EAA80 /* StarChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -19,6 +20,16 @@
 		E78FADBF2548B24B000EAA80 /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78FADBE2548B24B000EAA80 /* Chart.swift */; };
 		E78FADC82548B3A3000EAA80 /* StarChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E78FAD812548B1B6000EAA80 /* StarChart.framework */; };
 		E78FADC92548B3A3000EAA80 /* StarChart.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E78FAD812548B1B6000EAA80 /* StarChart.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E7A506AE25A110F600D75CB8 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7A506AC25A110F600D75CB8 /* Interface.storyboard */; };
+		E7A506B025A110F800D75CB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7A506AF25A110F800D75CB8 /* Assets.xcassets */; };
+		E7A506B725A110F900D75CB8 /* StarChartWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E7A506B625A110F900D75CB8 /* StarChartWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E7A506BC25A110F900D75CB8 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A506BB25A110F900D75CB8 /* InterfaceController.swift */; };
+		E7A506BE25A110F900D75CB8 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A506BD25A110F900D75CB8 /* ExtensionDelegate.swift */; };
+		E7A506C025A110F900D75CB8 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A506BF25A110F900D75CB8 /* ComplicationController.swift */; };
+		E7A506C225A110F900D75CB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7A506C125A110F900D75CB8 /* Assets.xcassets */; };
+		E7A506C625A110F900D75CB8 /* StarChartWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E7A506AA25A110F600D75CB8 /* StarChartWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E7A506DC25A112BC00D75CB8 /* StarChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E78FAD812548B1B6000EAA80 /* StarChart.framework */; };
+		E7A506DD25A112BC00D75CB8 /* StarChart.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E78FAD812548B1B6000EAA80 /* StarChart.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +39,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = E78FAD802548B1B6000EAA80;
 			remoteInfo = StarChart;
+		};
+		E7A506B825A110F900D75CB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E78FAD782548B1B6000EAA80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7A506B525A110F900D75CB8;
+			remoteInfo = "StarChartWatch Extension";
+		};
+		E7A506C425A110F900D75CB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E78FAD782548B1B6000EAA80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7A506A925A110F600D75CB8;
+			remoteInfo = StarChartWatch;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -43,9 +68,43 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E7A506C725A110F900D75CB8 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				E7A506C625A110F900D75CB8 /* StarChartWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7A506CA25A110F900D75CB8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E7A506B725A110F900D75CB8 /* StarChartWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7A506DE25A112BC00D75CB8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E7A506DD25A112BC00D75CB8 /* StarChart.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E7129E7D254B0DA300A76088 /* ChartMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartMath.swift; sourceTree = "<group>"; };
 		E78FAD812548B1B6000EAA80 /* StarChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StarChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E78FAD842548B1B6000EAA80 /* StarChart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StarChart.h; sourceTree = "<group>"; };
 		E78FAD852548B1B6000EAA80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,6 +120,16 @@
 		E78FADAF2548B1F3000EAA80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E78FADB12548B1F3000EAA80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E78FADBE2548B24B000EAA80 /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
+		E7A506AA25A110F600D75CB8 /* StarChartWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarChartWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7A506AD25A110F600D75CB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		E7A506AF25A110F800D75CB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E7A506B125A110F800D75CB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7A506B625A110F900D75CB8 /* StarChartWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "StarChartWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7A506BB25A110F900D75CB8 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		E7A506BD25A110F900D75CB8 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		E7A506BF25A110F900D75CB8 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		E7A506C125A110F900D75CB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E7A506C325A110F900D75CB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,15 +156,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E7A506B325A110F900D75CB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7A506DC25A112BC00D75CB8 /* StarChart.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		E78FAD772548B1B6000EAA80 = {
 			isa = PBXGroup;
 			children = (
-				E78FAD832548B1B6000EAA80 /* StarChart */,
-				E78FAD8E2548B1B6000EAA80 /* StarChartTests */,
-				E78FADA22548B1F2000EAA80 /* StarChartExample */,
+				E7A506E325A1190700D75CB8 /* Sources */,
+				E7A506E225A117C900D75CB8 /* Examples */,
+				E7A506E425A1190F00D75CB8 /* Tests */,
 				E78FAD822548B1B6000EAA80 /* Products */,
 				E78FADC62548B39B000EAA80 /* Frameworks */,
 			);
@@ -107,6 +184,8 @@
 				E78FAD812548B1B6000EAA80 /* StarChart.framework */,
 				E78FAD8A2548B1B6000EAA80 /* StarChartTests.xctest */,
 				E78FADA12548B1F2000EAA80 /* StarChartExample.app */,
+				E7A506AA25A110F600D75CB8 /* StarChartWatch.app */,
+				E7A506B625A110F900D75CB8 /* StarChartWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,6 +196,7 @@
 				E78FAD842548B1B6000EAA80 /* StarChart.h */,
 				E78FAD852548B1B6000EAA80 /* Info.plist */,
 				E78FADBE2548B24B000EAA80 /* Chart.swift */,
+				E7129E7D254B0DA300A76088 /* ChartMath.swift */,
 			);
 			path = StarChart;
 			sourceTree = "<group>";
@@ -149,6 +229,54 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7A506AB25A110F600D75CB8 /* StarChartWatch */ = {
+			isa = PBXGroup;
+			children = (
+				E7A506AC25A110F600D75CB8 /* Interface.storyboard */,
+				E7A506AF25A110F800D75CB8 /* Assets.xcassets */,
+				E7A506B125A110F800D75CB8 /* Info.plist */,
+			);
+			path = StarChartWatch;
+			sourceTree = "<group>";
+		};
+		E7A506BA25A110F900D75CB8 /* StarChartWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E7A506BB25A110F900D75CB8 /* InterfaceController.swift */,
+				E7A506BD25A110F900D75CB8 /* ExtensionDelegate.swift */,
+				E7A506BF25A110F900D75CB8 /* ComplicationController.swift */,
+				E7A506C125A110F900D75CB8 /* Assets.xcassets */,
+				E7A506C325A110F900D75CB8 /* Info.plist */,
+			);
+			path = "StarChartWatch Extension";
+			sourceTree = "<group>";
+		};
+		E7A506E225A117C900D75CB8 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				E78FADA22548B1F2000EAA80 /* StarChartExample */,
+				E7A506AB25A110F600D75CB8 /* StarChartWatch */,
+				E7A506BA25A110F900D75CB8 /* StarChartWatch Extension */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		E7A506E325A1190700D75CB8 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E78FAD832548B1B6000EAA80 /* StarChart */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E7A506E425A1190F00D75CB8 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E78FAD8E2548B1B6000EAA80 /* StarChartTests */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,15 +337,52 @@
 				E78FAD9E2548B1F2000EAA80 /* Frameworks */,
 				E78FAD9F2548B1F2000EAA80 /* Resources */,
 				E78FADCA2548B3A3000EAA80 /* Embed Frameworks */,
+				E7A506C725A110F900D75CB8 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E7A506C525A110F900D75CB8 /* PBXTargetDependency */,
 			);
 			name = StarChartExample;
 			productName = StarChartExample;
 			productReference = E78FADA12548B1F2000EAA80 /* StarChartExample.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E7A506A925A110F600D75CB8 /* StarChartWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7A506CE25A110F900D75CB8 /* Build configuration list for PBXNativeTarget "StarChartWatch" */;
+			buildPhases = (
+				E7A506A825A110F600D75CB8 /* Resources */,
+				E7A506CA25A110F900D75CB8 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7A506B925A110F900D75CB8 /* PBXTargetDependency */,
+			);
+			name = StarChartWatch;
+			productName = StarChartWatch;
+			productReference = E7A506AA25A110F600D75CB8 /* StarChartWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		E7A506B525A110F900D75CB8 /* StarChartWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7A506CD25A110F900D75CB8 /* Build configuration list for PBXNativeTarget "StarChartWatch Extension" */;
+			buildPhases = (
+				E7A506B225A110F900D75CB8 /* Sources */,
+				E7A506B325A110F900D75CB8 /* Frameworks */,
+				E7A506B425A110F900D75CB8 /* Resources */,
+				E7A506DE25A112BC00D75CB8 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "StarChartWatch Extension";
+			productName = "StarChartWatch Extension";
+			productReference = E7A506B625A110F900D75CB8 /* StarChartWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -225,7 +390,7 @@
 		E78FAD782548B1B6000EAA80 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1200;
+				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					E78FAD802548B1B6000EAA80 = {
@@ -237,6 +402,12 @@
 					};
 					E78FADA02548B1F2000EAA80 = {
 						CreatedOnToolsVersion = 12.0.1;
+					};
+					E7A506A925A110F600D75CB8 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					E7A506B525A110F900D75CB8 = {
+						CreatedOnToolsVersion = 12.3;
 					};
 				};
 			};
@@ -256,6 +427,8 @@
 				E78FAD802548B1B6000EAA80 /* StarChart */,
 				E78FAD892548B1B6000EAA80 /* StarChartTests */,
 				E78FADA02548B1F2000EAA80 /* StarChartExample */,
+				E7A506A925A110F600D75CB8 /* StarChartWatch */,
+				E7A506B525A110F900D75CB8 /* StarChartWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -285,6 +458,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E7A506A825A110F600D75CB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7A506B025A110F800D75CB8 /* Assets.xcassets in Resources */,
+				E7A506AE25A110F600D75CB8 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7A506B425A110F900D75CB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7A506C225A110F900D75CB8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -292,6 +482,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7129E7E254B0DA300A76088 /* ChartMath.swift in Sources */,
 				E78FADBF2548B24B000EAA80 /* Chart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,6 +505,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E7A506B225A110F900D75CB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7A506BE25A110F900D75CB8 /* ExtensionDelegate.swift in Sources */,
+				E7A506BC25A110F900D75CB8 /* InterfaceController.swift in Sources */,
+				E7A506C025A110F900D75CB8 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -321,6 +522,16 @@
 			isa = PBXTargetDependency;
 			target = E78FAD802548B1B6000EAA80 /* StarChart */;
 			targetProxy = E78FAD8C2548B1B6000EAA80 /* PBXContainerItemProxy */;
+		};
+		E7A506B925A110F900D75CB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7A506B525A110F900D75CB8 /* StarChartWatch Extension */;
+			targetProxy = E7A506B825A110F900D75CB8 /* PBXContainerItemProxy */;
+		};
+		E7A506C525A110F900D75CB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7A506A925A110F600D75CB8 /* StarChartWatch */;
+			targetProxy = E7A506C425A110F900D75CB8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -339,6 +550,14 @@
 				E78FADAF2548B1F3000EAA80 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E7A506AC25A110F600D75CB8 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7A506AD25A110F600D75CB8 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -593,6 +812,90 @@
 			};
 			name = Release;
 		};
+		E7A506C825A110F900D75CB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 37L7BN93A5;
+				IBSC_MODULE = StarChartWatch_Extension;
+				INFOPLIST_FILE = StarChartWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.nitochkin.StarChartExample.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		E7A506C925A110F900D75CB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 37L7BN93A5;
+				IBSC_MODULE = StarChartWatch_Extension;
+				INFOPLIST_FILE = StarChartWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.nitochkin.StarChartExample.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		E7A506CB25A110F900D75CB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 37L7BN93A5;
+				INFOPLIST_FILE = "StarChartWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.nitochkin.StarChartExample.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		E7A506CC25A110F900D75CB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 37L7BN93A5;
+				INFOPLIST_FILE = "StarChartWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.nitochkin.StarChartExample.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -628,6 +931,24 @@
 			buildConfigurations = (
 				E78FADB32548B1F3000EAA80 /* Debug */,
 				E78FADB42548B1F3000EAA80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7A506CD25A110F900D75CB8 /* Build configuration list for PBXNativeTarget "StarChartWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7A506CB25A110F900D75CB8 /* Debug */,
+				E7A506CC25A110F900D75CB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7A506CE25A110F900D75CB8 /* Build configuration list for PBXNativeTarget "StarChartWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7A506C825A110F900D75CB8 /* Debug */,
+				E7A506C925A110F900D75CB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
